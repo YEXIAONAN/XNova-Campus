@@ -1,4 +1,4 @@
-﻿package com.xnova.controller.student;
+package com.xnova.controller.student;
 
 import com.xnova.common.model.PageResult;
 import com.xnova.common.result.ApiResponse;

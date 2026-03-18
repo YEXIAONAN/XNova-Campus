@@ -1,4 +1,4 @@
-﻿package com.xnova.exception;
+package com.xnova.exception;
 
 import com.xnova.common.result.ApiResponse;
 import jakarta.validation.ConstraintViolationException;

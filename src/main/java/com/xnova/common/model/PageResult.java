@@ -1,4 +1,4 @@
-﻿package com.xnova.common.model;
+package com.xnova.common.model;
 
 import lombok.Data;
 

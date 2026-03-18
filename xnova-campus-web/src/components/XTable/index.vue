@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <el-table :data="data" border stripe v-loading="loading" style="width: 100%">
     <slot />
     <template #empty>

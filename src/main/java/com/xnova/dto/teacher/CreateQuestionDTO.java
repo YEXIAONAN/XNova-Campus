@@ -1,4 +1,4 @@
-﻿package com.xnova.dto.teacher;
+package com.xnova.dto.teacher;
 
 import com.xnova.common.enums.QuestionType;
 import jakarta.validation.constraints.NotBlank;

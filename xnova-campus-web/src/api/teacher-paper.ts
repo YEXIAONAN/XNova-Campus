@@ -1,4 +1,4 @@
-﻿import request from '@/utils/request'
+import request from '@/utils/request'
 
 export const createQuestionApi = (data: any) => request.post('/teacher/questions', data)
 export const getQuestionApi = (id: number) => request.get(`/teacher/questions/${id}`)

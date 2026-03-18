@@ -1,4 +1,4 @@
-﻿const TOKEN_KEY = 'XNOVA_TOKEN'
+const TOKEN_KEY = 'XNOVA_TOKEN'
 
 export function getToken(): string {
   return localStorage.getItem(TOKEN_KEY) || ''

@@ -1,4 +1,4 @@
-﻿package com.xnova.parser.model;
+package com.xnova.parser.model;
 
 import lombok.Data;
 

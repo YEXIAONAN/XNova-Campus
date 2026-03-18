@@ -1,4 +1,4 @@
-﻿import { defineStore } from 'pinia'
+import { defineStore } from 'pinia'
 import { clearToken, setToken as persistToken, getToken } from '@/utils/auth'
 import { loginApi, meApi, logoutApi } from '@/api/auth'
 

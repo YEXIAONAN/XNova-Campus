@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div class="x-pagination">
     <el-pagination
       background

@@ -1,4 +1,4 @@
-﻿import request from '@/utils/request'
+import request from '@/utils/request'
 
 export const pageUsersApi = (params: Record<string, any>) => request.get('/admin/users', { params })
 export const createStudentApi = (data: any) => request.post('/admin/users/students', data)

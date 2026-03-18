@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <el-card>
     <template #header>可参加考试</template>
     <XSearchForm :model="query" :items="searchItems" @search="fetchList" @reset="onReset" />

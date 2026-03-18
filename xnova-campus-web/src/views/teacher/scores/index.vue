@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <el-card>
     <template #header>成绩管理</template>
     <XSearchForm :model="query" :items="items" @search="fetchList" @reset="onReset" />

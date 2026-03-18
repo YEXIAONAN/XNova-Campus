@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div class="layout-wrap">
     <Sidebar />
     <div class="layout-main" :class="{ collapse: appStore.sidebarCollapsed }">

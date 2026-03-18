@@ -1,4 +1,4 @@
-﻿#PAPER: Java期中测验A
+#PAPER: Java期中测验A
 
 #QUESTION
 TYPE: SINGLE

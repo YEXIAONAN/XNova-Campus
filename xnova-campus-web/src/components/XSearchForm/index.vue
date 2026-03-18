@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <el-form :inline="true" :model="model" class="search-form">
     <template v-for="item in items" :key="item.prop">
       <el-form-item :label="item.label">

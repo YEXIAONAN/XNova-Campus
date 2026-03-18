@@ -1,4 +1,4 @@
-﻿package com.xnova.dto.auth;
+package com.xnova.dto.auth;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

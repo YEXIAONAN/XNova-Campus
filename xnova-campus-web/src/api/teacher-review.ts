@@ -1,4 +1,4 @@
-﻿import request from '@/utils/request'
+import request from '@/utils/request'
 
 export const pendingReviewsApi = (params: any) => request.get('/teacher/reviews/pending', { params })
 export const reviewDetailApi = (submissionId: number) => request.get(`/teacher/reviews/${submissionId}`)

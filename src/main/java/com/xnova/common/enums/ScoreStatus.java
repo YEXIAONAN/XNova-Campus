@@ -1,4 +1,4 @@
-﻿package com.xnova.common.enums;
+package com.xnova.common.enums;
 
 public enum ScoreStatus {
     PENDING_REVIEW,

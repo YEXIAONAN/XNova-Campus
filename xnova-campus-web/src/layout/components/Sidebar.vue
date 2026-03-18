@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <aside class="sidebar" :class="{ collapse: appStore.sidebarCollapsed }">
     <div class="logo">XNova Campus</div>
     <el-scrollbar class="menu-scroll">

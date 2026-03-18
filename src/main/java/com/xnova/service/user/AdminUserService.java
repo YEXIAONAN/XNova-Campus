@@ -1,4 +1,4 @@
-﻿package com.xnova.service.user;
+package com.xnova.service.user;
 
 import com.xnova.common.model.PageResult;
 import com.xnova.dto.user.CreateStudentDTO;

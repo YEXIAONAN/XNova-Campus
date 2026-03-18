@@ -1,4 +1,4 @@
-﻿package com.xnova.vo.student;
+package com.xnova.vo.student;
 
 import lombok.Data;
 

@@ -1,5 +1,4 @@
-﻿import type { RouteRecordRaw } from 'vue-router'
-import Layout from '@/layout/index.vue'
+import type { RouteRecordRaw } from 'vue-router'
 
 export const staticRoutes: RouteRecordRaw[] = [
   {
@@ -15,7 +14,7 @@ export const staticRoutes: RouteRecordRaw[] = [
   {
     path: '/dashboard',
     name: 'DashboardRoot',
-    component: Layout,
+    component: () => import('@/layout/index.vue'),
     meta: { title: '工作台', icon: 'HomeFilled' },
     children: [
       {

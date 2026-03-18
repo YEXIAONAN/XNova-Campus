@@ -1,4 +1,4 @@
-﻿package com.xnova.service.impl.auth;
+package com.xnova.service.impl.auth;
 
 import com.xnova.dto.auth.LoginDTO;
 import com.xnova.entity.SysUser;

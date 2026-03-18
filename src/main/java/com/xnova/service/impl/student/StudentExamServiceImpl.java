@@ -1,4 +1,4 @@
-﻿package com.xnova.service.impl.student;
+package com.xnova.service.impl.student;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.fasterxml.jackson.core.type.TypeReference;

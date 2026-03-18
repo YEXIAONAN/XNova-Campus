@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <el-row :gutter="12">
     <el-col :span="6" v-for="card in cards" :key="card.label">
       <el-card>

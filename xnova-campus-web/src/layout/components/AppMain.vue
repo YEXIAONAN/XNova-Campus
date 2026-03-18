@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <main class="app-main">
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">

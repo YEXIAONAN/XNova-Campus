@@ -1,4 +1,4 @@
-﻿package com.xnova.service.student;
+package com.xnova.service.student;
 
 import com.xnova.common.model.PageResult;
 import com.xnova.dto.student.StudentExamQueryDTO;

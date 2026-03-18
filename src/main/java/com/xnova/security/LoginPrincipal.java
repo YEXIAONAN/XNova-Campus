@@ -1,4 +1,4 @@
-﻿package com.xnova.security;
+package com.xnova.security;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

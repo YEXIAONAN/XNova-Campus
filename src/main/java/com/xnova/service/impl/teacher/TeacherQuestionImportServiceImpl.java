@@ -1,4 +1,4 @@
-﻿package com.xnova.service.impl.teacher;
+package com.xnova.service.impl.teacher;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,4 +1,4 @@
-﻿import request from '@/utils/request'
+import request from '@/utils/request'
 
 export const studentExamsApi = (params: any) => request.get('/student/exams', { params })
 export const studentExamDetailApi = (publishId: number) => request.get(`/student/exams/${publishId}`)

@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div class="card-grid">
     <el-card>
       <template #header>欢迎使用 XNova Campus</template>

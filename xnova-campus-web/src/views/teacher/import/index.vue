@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <el-card>
     <template #header>TXT 导题</template>
     <el-upload :auto-upload="false" :limit="1" accept=".txt">

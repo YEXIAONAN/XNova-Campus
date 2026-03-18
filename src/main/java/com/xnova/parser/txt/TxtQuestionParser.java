@@ -1,4 +1,4 @@
-﻿package com.xnova.parser.txt;
+package com.xnova.parser.txt;
 
 import com.xnova.common.enums.QuestionType;
 import com.xnova.parser.model.ParseError;

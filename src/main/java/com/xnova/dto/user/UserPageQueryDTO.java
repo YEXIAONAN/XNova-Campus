@@ -1,4 +1,4 @@
-﻿package com.xnova.dto.user;
+package com.xnova.dto.user;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

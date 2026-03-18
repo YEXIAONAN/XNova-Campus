@@ -1,4 +1,4 @@
-﻿import { defineStore } from 'pinia'
+import { defineStore } from 'pinia'
 import type { RouteRecordRaw } from 'vue-router'
 import router from '@/router'
 import { asyncRoutes } from '@/router/async-routes'

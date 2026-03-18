@@ -1,4 +1,4 @@
-﻿package com.xnova.controller.teacher;
+package com.xnova.controller.teacher;
 
 import com.xnova.common.result.ApiResponse;
 import com.xnova.dto.teacher.AddPaperQuestionsDTO;

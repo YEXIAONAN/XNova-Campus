@@ -1,4 +1,4 @@
-﻿package com.xnova.service.impl.teacher;
+package com.xnova.service.impl.teacher;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

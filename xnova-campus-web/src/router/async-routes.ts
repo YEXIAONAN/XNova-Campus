@@ -1,11 +1,10 @@
-﻿import type { RouteRecordRaw } from 'vue-router'
-import Layout from '@/layout/index.vue'
+import type { RouteRecordRaw } from 'vue-router'
 
 export const asyncRoutes: RouteRecordRaw[] = [
   {
     path: '/student',
     name: 'StudentRoot',
-    component: Layout,
+    component: () => import('@/layout/index.vue'),
     meta: { title: '学生端', icon: 'Reading', roles: ['STUDENT'] },
     children: [
       {
@@ -37,7 +36,7 @@ export const asyncRoutes: RouteRecordRaw[] = [
   {
     path: '/teacher',
     name: 'TeacherRoot',
-    component: Layout,
+    component: () => import('@/layout/index.vue'),
     meta: { title: '教师端', icon: 'User', roles: ['TEACHER'] },
     children: [
       {
@@ -81,7 +80,7 @@ export const asyncRoutes: RouteRecordRaw[] = [
   {
     path: '/admin',
     name: 'AdminRoot',
-    component: Layout,
+    component: () => import('@/layout/index.vue'),
     meta: { title: '管理员', icon: 'Setting', roles: ['ADMIN'] },
     children: [
       {

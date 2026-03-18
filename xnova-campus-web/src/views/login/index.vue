@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div class="login-page">
     <div class="login-panel">
       <div class="brand">XNova Campus</div>

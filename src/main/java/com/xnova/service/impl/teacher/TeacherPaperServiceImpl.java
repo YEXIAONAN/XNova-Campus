@@ -1,4 +1,4 @@
-﻿package com.xnova.service.impl.teacher;
+package com.xnova.service.impl.teacher;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -22,7 +22,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -95,10 +94,10 @@ public class TeacherPaperServiceImpl implements TeacherPaperService {
                 .eq(PaperQuestion::getPaperId, paperId));
 
         List<Long> qids = relations.stream().map(PaperQuestion::getQuestionId).toList();
-        Map<Long, Question> questionMap = new HashMap<>();
-        if (!qids.isEmpty()) {
-            questionMap = questionMapper.selectBatchIds(qids).stream().collect(java.util.stream.Collectors.toMap(Question::getId, q -> q));
-        }
+        final Map<Long, Question> questionMap = qids.isEmpty()
+                ? Map.of()
+                : questionMapper.selectBatchIds(qids).stream()
+                        .collect(java.util.stream.Collectors.toMap(Question::getId, q -> q));
 
         PaperDetailVO vo = new PaperDetailVO();
         vo.setId(paper.getId());

@@ -1,4 +1,4 @@
-﻿package com.xnova.utils;
+package com.xnova.utils;
 
 import com.xnova.exception.BizException;
 import com.xnova.security.LoginPrincipal;

@@ -1,4 +1,4 @@
-﻿package com.xnova.dto.student;
+package com.xnova.dto.student;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;

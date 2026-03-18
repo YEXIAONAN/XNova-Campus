@@ -1,4 +1,4 @@
-﻿import type { RouteRecordRaw } from 'vue-router'
+import type { RouteRecordRaw } from 'vue-router'
 
 export function hasRole(roles: string[], route: RouteRecordRaw): boolean {
   const allowRoles = (route.meta?.roles || []) as string[]

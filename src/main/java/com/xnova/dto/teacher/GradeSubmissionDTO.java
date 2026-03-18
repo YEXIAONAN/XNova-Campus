@@ -1,4 +1,4 @@
-﻿package com.xnova.dto.teacher;
+package com.xnova.dto.teacher;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.DecimalMin;

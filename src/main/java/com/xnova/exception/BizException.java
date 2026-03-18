@@ -1,4 +1,4 @@
-﻿package com.xnova.exception;
+package com.xnova.exception;
 
 import lombok.Getter;
 

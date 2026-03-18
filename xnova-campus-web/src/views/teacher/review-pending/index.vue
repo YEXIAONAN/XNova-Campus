@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <el-card>
     <template #header>未批改试卷</template>
     <XSearchForm :model="query" :items="items" @search="fetchList" @reset="onReset" />

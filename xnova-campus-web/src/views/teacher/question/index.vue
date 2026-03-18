@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <el-card>
     <template #header>题库管理</template>
     <el-form inline>

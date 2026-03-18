@@ -1,4 +1,4 @@
-﻿package com.xnova.config.security;
+package com.xnova.config.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xnova.common.result.ApiResponse;
@@ -17,6 +17,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import java.io.IOException;
 
 @Configuration
 @EnableMethodSecurity
@@ -58,7 +59,7 @@ public class SecurityConfig {
         return http.build();
     }
 
-    private void writeUnauthorized(jakarta.servlet.http.HttpServletResponse response, AuthenticationException e) throws Exception {
+    private void writeUnauthorized(jakarta.servlet.http.HttpServletResponse response, AuthenticationException e) throws IOException {
         response.setStatus(401);
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
         response.getWriter().write(objectMapper.writeValueAsString(ApiResponse.fail(401, "未认证或Token已失效")));

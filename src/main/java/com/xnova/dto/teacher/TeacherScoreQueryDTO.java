@@ -1,4 +1,4 @@
-﻿package com.xnova.dto.teacher;
+package com.xnova.dto.teacher;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
