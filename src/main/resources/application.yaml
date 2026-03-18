@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: xnova-campus-server
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/xnova_campus?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+xnova:
+  jwt:
+    secret: "xnova-campus-super-secret-key-at-least-32-char"
+    access-expire-seconds: 7200
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0

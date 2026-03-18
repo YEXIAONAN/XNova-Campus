@@ -1,0 +1,17 @@
+package com.xnova.dto.teacher;
+
+import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
+
+@Data
+public class ImportConfirmDTO {
+
+    @NotBlank(message = "importToken²»ÄÜÎª¿Õ")
+    private String importToken;
+
+    private Boolean saveToBank = true;
+
+    private Boolean appendToPaper = false;
+
+    private Long targetPaperId;
+}
