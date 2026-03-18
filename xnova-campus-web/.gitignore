@@ -1,0 +1,8 @@
+﻿node_modules
+dist
+.vite
+*.log
+
+# Prevent accidental JS emit into src
+src/**/*.js
+src/**/*.vue.js
