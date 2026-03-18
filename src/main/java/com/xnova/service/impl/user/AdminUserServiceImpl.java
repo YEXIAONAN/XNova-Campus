@@ -1,4 +1,4 @@
-package com.xnova.service.impl.user;
+ï»¿package com.xnova.service.impl.user;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -124,7 +124,7 @@ public class AdminUserServiceImpl implements AdminUserService {
     public void updateStudent(UpdateStudentDTO dto) {
         SysUser user = getExistingUser(dto.getUserId());
         if (!UserType.STUDENT.name().equals(user.getUserType())) {
-            throw new BizException(400, "¸ÃÓÃ»§²»ÊÇÑ§Éú");
+            throw new BizException(400, "è¯¥ç”¨æˆ·ä¸æ˜¯å­¦ç”Ÿ");
         }
 
         user.setRealName(dto.getRealName());
@@ -135,7 +135,7 @@ public class AdminUserServiceImpl implements AdminUserService {
         StudentProfile profile = studentProfileMapper.selectOne(new LambdaQueryWrapper<StudentProfile>()
                 .eq(StudentProfile::getUserId, dto.getUserId()));
         if (profile == null) {
-            throw new BizException(404, "Ñ§Éúµµ°¸²»´æÔÚ");
+            throw new BizException(404, "å­¦ç”Ÿæ¡£æ¡ˆä¸å­˜åœ¨");
         }
         profile.setEnrollmentYear(dto.getEnrollmentYear());
         profile.setMajor(dto.getMajor());
@@ -150,7 +150,7 @@ public class AdminUserServiceImpl implements AdminUserService {
     public void updateTeacher(UpdateTeacherDTO dto) {
         SysUser user = getExistingUser(dto.getUserId());
         if (!UserType.TEACHER.name().equals(user.getUserType())) {
-            throw new BizException(400, "¸ÃÓÃ»§²»ÊÇ½ÌÊ¦");
+            throw new BizException(400, "è¯¥ç”¨æˆ·ä¸æ˜¯æ•™å¸ˆ");
         }
 
         user.setRealName(dto.getRealName());
@@ -161,7 +161,7 @@ public class AdminUserServiceImpl implements AdminUserService {
         TeacherProfile profile = teacherProfileMapper.selectOne(new LambdaQueryWrapper<TeacherProfile>()
                 .eq(TeacherProfile::getUserId, dto.getUserId()));
         if (profile == null) {
-            throw new BizException(404, "½ÌÊ¦µµ°¸²»´æÔÚ");
+            throw new BizException(404, "æ•™å¸ˆæ¡£æ¡ˆä¸å­˜åœ¨");
         }
         profile.setTitle(dto.getTitle());
         profile.setDepartment(dto.getDepartment());
@@ -191,7 +191,7 @@ public class AdminUserServiceImpl implements AdminUserService {
     @Override
     public void updateStatus(UserStatusDTO dto) {
         if (!Objects.equals(dto.getStatus(), 0) && !Objects.equals(dto.getStatus(), 1)) {
-            throw new BizException(400, "×´Ì¬½öÖ§³Ö0»ò1");
+            throw new BizException(400, "çŠ¶æ€ä»…æ”¯æŒ0æˆ–1");
         }
         SysUser user = getExistingUser(dto.getUserId());
         user.setStatus(dto.getStatus());
@@ -359,7 +359,7 @@ public class AdminUserServiceImpl implements AdminUserService {
         }
         Long count = sysUserMapper.selectCount(wrapper);
         if (count != null && count > 0) {
-            throw new BizException(400, "ÓÃ»§ÃûÒÑ´æÔÚ");
+            throw new BizException(400, "ç”¨æˆ·åå·²å­˜åœ¨");
         }
     }
 
@@ -383,7 +383,7 @@ public class AdminUserServiceImpl implements AdminUserService {
                 .eq(SysRole::getRoleCode, roleCode)
                 .eq(SysRole::getStatus, 1));
         if (role == null) {
-            throw new BizException(500, "½ÇÉ«Î´³õÊ¼»¯: " + roleCode);
+            throw new BizException(500, "è§’è‰²æœªåˆå§‹åŒ–: " + roleCode);
         }
         return role.getId();
     }
@@ -391,7 +391,7 @@ public class AdminUserServiceImpl implements AdminUserService {
     private SysUser getExistingUser(Long userId) {
         SysUser user = sysUserMapper.selectById(userId);
         if (user == null) {
-            throw new BizException(404, "ÓÃ»§²»´æÔÚ");
+            throw new BizException(404, "ç”¨æˆ·ä¸å­˜åœ¨");
         }
         return user;
     }
@@ -440,3 +440,4 @@ public class AdminUserServiceImpl implements AdminUserService {
         return userRoleMap;
     }
 }
+

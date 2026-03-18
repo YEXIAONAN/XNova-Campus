@@ -1,4 +1,4 @@
-package com.xnova.controller.admin;
+﻿package com.xnova.controller.admin;
 
 import com.xnova.common.model.PageResult;
 import com.xnova.common.result.ApiResponse;
@@ -99,3 +99,4 @@ public class AdminUserController {
         return ApiResponse.ok(adminUserService.getDetail(userId));
     }
 }
+

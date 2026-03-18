@@ -1,4 +1,4 @@
-package com.xnova;
+﻿package com.xnova;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -13,3 +13,4 @@ public class Application {
 	}
 
 }
+

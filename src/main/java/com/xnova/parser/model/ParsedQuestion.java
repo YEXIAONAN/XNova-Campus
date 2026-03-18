@@ -1,4 +1,4 @@
-package com.xnova.parser.model;
+﻿package com.xnova.parser.model;
 
 import lombok.Data;
 
@@ -18,3 +18,4 @@ public class ParsedQuestion {
     private BigDecimal score;
     private String contentHash;
 }
+

@@ -1,4 +1,4 @@
-package com.xnova.parser.model;
+﻿package com.xnova.parser.model;
 
 import lombok.Data;
 
@@ -9,3 +9,4 @@ public class ParseError {
     private String field;
     private String reason;
 }
+

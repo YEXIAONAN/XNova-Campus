@@ -1,4 +1,4 @@
-package com.xnova.config.security;
+ï»¿package com.xnova.config.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xnova.common.result.ApiResponse;
@@ -51,7 +51,7 @@ public class SecurityConfig {
                         .accessDeniedHandler((request, response, accessDeniedException) -> {
                             response.setStatus(403);
                             response.setContentType(MediaType.APPLICATION_JSON_VALUE);
-                            response.getWriter().write(objectMapper.writeValueAsString(ApiResponse.fail(403, "ÎŞÈ¨ÏŞ·ÃÎÊ")));
+                            response.getWriter().write(objectMapper.writeValueAsString(ApiResponse.fail(403, "æ— æƒé™è®¿é—®")));
                         }))
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
@@ -61,6 +61,7 @@ public class SecurityConfig {
     private void writeUnauthorized(jakarta.servlet.http.HttpServletResponse response, AuthenticationException e) throws Exception {
         response.setStatus(401);
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
-        response.getWriter().write(objectMapper.writeValueAsString(ApiResponse.fail(401, "Î´ÈÏÖ¤»òTokenÒÑÊ§Ğ§")));
+        response.getWriter().write(objectMapper.writeValueAsString(ApiResponse.fail(401, "æœªè®¤è¯æˆ–Tokenå·²å¤±æ•ˆ")));
     }
 }
+

@@ -1,4 +1,4 @@
-package com.xnova.utils;
+﻿package com.xnova.utils;
 
 import com.xnova.config.security.JwtProperties;
 import io.jsonwebtoken.Claims;
@@ -54,3 +54,4 @@ public class JwtUtil {
         return expiration.before(new Date());
     }
 }
+

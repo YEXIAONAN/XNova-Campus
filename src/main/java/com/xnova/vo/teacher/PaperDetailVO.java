@@ -1,4 +1,4 @@
-package com.xnova.vo.teacher;
+﻿package com.xnova.vo.teacher;
 
 import lombok.Data;
 
@@ -24,3 +24,4 @@ public class PaperDetailVO {
         private List<String> options;
     }
 }
+

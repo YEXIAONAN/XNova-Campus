@@ -1,4 +1,4 @@
-package com.xnova.vo.user;
+﻿package com.xnova.vo.user;
 
 import lombok.Data;
 
@@ -23,3 +23,4 @@ public class UserItemVO {
 
     private String major;
 }
+

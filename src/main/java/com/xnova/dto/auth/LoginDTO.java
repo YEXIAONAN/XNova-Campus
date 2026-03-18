@@ -1,4 +1,4 @@
-package com.xnova.dto.auth;
+ï»¿package com.xnova.dto.auth;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -6,11 +6,12 @@ import lombok.Data;
 @Data
 public class LoginDTO {
 
-    @NotBlank(message = "ÓÃ»§Ãû²»ÄÜÎª¿Õ")
+    @NotBlank(message = "ç”¨æˆ·åä¸èƒ½ä¸ºç©º")
     private String username;
 
-    @NotBlank(message = "ÃÜÂë²»ÄÜÎª¿Õ")
+    @NotBlank(message = "å¯†ç ä¸èƒ½ä¸ºç©º")
     private String password;
 
     private String loginType;
 }
+

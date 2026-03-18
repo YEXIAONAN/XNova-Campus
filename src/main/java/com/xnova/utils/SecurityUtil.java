@@ -1,4 +1,4 @@
-package com.xnova.utils;
+﻿package com.xnova.utils;
 
 import com.xnova.exception.BizException;
 import com.xnova.security.LoginPrincipal;
@@ -13,8 +13,9 @@ public final class SecurityUtil {
     public static Long currentUserId() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication == null || !(authentication.getPrincipal() instanceof LoginPrincipal principal)) {
-            throw new BizException(401, "δ��֤��Token��ʧЧ");
+            throw new BizException(401, "未认证或Token已失效");
         }
         return principal.getUserId();
     }
 }
+

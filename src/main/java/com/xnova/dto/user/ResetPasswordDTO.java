@@ -1,4 +1,4 @@
-package com.xnova.dto.user;
+锘縫ackage com.xnova.dto.user;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
@@ -6,8 +6,9 @@ import lombok.Data;
 @Data
 public class ResetPasswordDTO {
 
-    @NotNull(message = "用户ID不能为空")
+    @NotNull(message = "鐢ㄦ埛ID涓嶈兘涓虹┖")
     private Long userId;
 
     private String newPassword;
 }
+

@@ -1,4 +1,4 @@
-package com.xnova.config.security;
+﻿package com.xnova.config.security;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -17,3 +17,4 @@ public class JwtProperties {
     @Min(300)
     private long accessExpireSeconds;
 }
+

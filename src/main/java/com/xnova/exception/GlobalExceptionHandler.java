@@ -1,4 +1,4 @@
-package com.xnova.exception;
+ï»¿package com.xnova.exception;
 
 import com.xnova.common.result.ApiResponse;
 import jakarta.validation.ConstraintViolationException;
@@ -23,21 +23,22 @@ public class GlobalExceptionHandler {
             ConstraintViolationException.class
     })
     public ApiResponse<Void> handleValidation(Exception e) {
-        return ApiResponse.fail(400, "²ÎÊıĞ£ÑéÊ§°Ü");
+        return ApiResponse.fail(400, "å‚æ•°æ ¡éªŒå¤±è´¥");
     }
 
     @ExceptionHandler(BadCredentialsException.class)
     public ApiResponse<Void> handleBadCredentials(BadCredentialsException e) {
-        return ApiResponse.fail(401, "ÓÃ»§Ãû»òÃÜÂë´íÎó");
+        return ApiResponse.fail(401, "ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯");
     }
 
     @ExceptionHandler(AccessDeniedException.class)
     public ApiResponse<Void> handleAccessDenied(AccessDeniedException e) {
-        return ApiResponse.fail(403, "ÎŞÈ¨ÏŞ·ÃÎÊ");
+        return ApiResponse.fail(403, "æ— æƒé™è®¿é—®");
     }
 
     @ExceptionHandler(Exception.class)
     public ApiResponse<Void> handleException(Exception e) {
-        return ApiResponse.fail(500, "ÏµÍ³ÄÚ²¿´íÎó");
+        return ApiResponse.fail(500, "ç³»ç»Ÿå†…éƒ¨é”™è¯¯");
     }
 }
+

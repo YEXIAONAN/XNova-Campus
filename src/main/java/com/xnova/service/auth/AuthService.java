@@ -1,4 +1,4 @@
-package com.xnova.service.auth;
+﻿package com.xnova.service.auth;
 
 import com.xnova.dto.auth.LoginDTO;
 import com.xnova.vo.auth.CurrentUserVO;
@@ -11,3 +11,4 @@ public interface AuthService {
 
     void logout(String authorization);
 }
+

@@ -1,4 +1,4 @@
-package com.xnova.security;
+﻿package com.xnova.security;
 
 import com.xnova.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
@@ -61,3 +61,4 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 }
+

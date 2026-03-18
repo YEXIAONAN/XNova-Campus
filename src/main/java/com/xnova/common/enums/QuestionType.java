@@ -1,4 +1,4 @@
-package com.xnova.common.enums;
+﻿package com.xnova.common.enums;
 
 public enum QuestionType {
     SINGLE,
@@ -6,3 +6,4 @@ public enum QuestionType {
     JUDGE,
     SHORT
 }
+

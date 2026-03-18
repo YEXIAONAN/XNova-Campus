@@ -1,4 +1,4 @@
-package com.xnova.config.mybatis;
+﻿package com.xnova.config.mybatis;
 
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
@@ -15,3 +15,4 @@ public class MybatisPlusConfig {
         return interceptor;
     }
 }
+

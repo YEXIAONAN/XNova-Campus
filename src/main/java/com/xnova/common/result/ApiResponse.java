@@ -1,4 +1,4 @@
-package com.xnova.common.result;
+﻿package com.xnova.common.result;
 
 import lombok.Data;
 
@@ -30,3 +30,4 @@ public class ApiResponse<T> {
         return response;
     }
 }
+

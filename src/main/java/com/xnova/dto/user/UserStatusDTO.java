@@ -1,4 +1,4 @@
-package com.xnova.dto.user;
+ï»¿package com.xnova.dto.user;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
@@ -6,9 +6,10 @@ import lombok.Data;
 @Data
 public class UserStatusDTO {
 
-    @NotNull(message = "ÓÃ»§ID²»ÄÜÎª¿Õ")
+    @NotNull(message = "ç”¨æˆ·IDä¸èƒ½ä¸ºç©º")
     private Long userId;
 
-    @NotNull(message = "×´Ì¬²»ÄÜÎª¿Õ")
+    @NotNull(message = "çŠ¶æ€ä¸èƒ½ä¸ºç©º")
     private Integer status;
 }
+

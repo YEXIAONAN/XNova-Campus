@@ -1,4 +1,4 @@
-package com.xnova.vo.auth;
+﻿package com.xnova.vo.auth;
 
 import lombok.Data;
 
@@ -12,3 +12,4 @@ public class CurrentUserVO {
     private List<String> roles;
     private List<String> permissions;
 }
+

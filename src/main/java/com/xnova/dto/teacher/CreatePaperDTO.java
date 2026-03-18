@@ -1,4 +1,4 @@
-package com.xnova.dto.teacher;
+ï»¿package com.xnova.dto.teacher;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -6,10 +6,11 @@ import lombok.Data;
 @Data
 public class CreatePaperDTO {
 
-    @NotBlank(message = "ÊÔ¾íÃû³Æ²»ÄÜÎª¿Õ")
+    @NotBlank(message = "è¯•å·åç§°ä¸èƒ½ä¸ºç©º")
     private String paperName;
 
     private String description;
 
     private Integer durationMinutes;
 }
+

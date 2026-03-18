@@ -1,4 +1,4 @@
-package com.xnova.dto.teacher;
+锘縫ackage com.xnova.dto.teacher;
 
 import com.xnova.common.enums.QuestionType;
 import jakarta.validation.constraints.NotBlank;
@@ -11,10 +11,10 @@ import java.util.List;
 @Data
 public class CreateQuestionDTO {
 
-    @NotNull(message = "题型不能为空")
+    @NotNull(message = "棰樺瀷涓嶈兘涓虹┖")
     private QuestionType questionType;
 
-    @NotBlank(message = "题干不能为空")
+    @NotBlank(message = "棰樺共涓嶈兘涓虹┖")
     private String stem;
 
     private List<String> options;
@@ -27,3 +27,4 @@ public class CreateQuestionDTO {
 
     private BigDecimal defaultScore;
 }
+

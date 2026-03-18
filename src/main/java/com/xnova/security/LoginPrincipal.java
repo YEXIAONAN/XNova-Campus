@@ -1,4 +1,4 @@
-package com.xnova.security;
+﻿package com.xnova.security;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,3 +13,4 @@ public class LoginPrincipal {
     private List<String> roles;
     private List<String> permissions;
 }
+

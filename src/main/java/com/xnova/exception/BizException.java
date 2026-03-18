@@ -1,4 +1,4 @@
-package com.xnova.exception;
+﻿package com.xnova.exception;
 
 import lombok.Getter;
 
@@ -12,3 +12,4 @@ public class BizException extends RuntimeException {
         this.code = code;
     }
 }
+

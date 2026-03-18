@@ -1,4 +1,4 @@
-package com.xnova.dto.teacher;
+Ôªøpackage com.xnova.dto.teacher;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class ImportConfirmDTO {
 
-    @NotBlank(message = "importToken≤ªƒ‹Œ™ø’")
+    @NotBlank(message = "importToken‰∏çËÉΩ‰∏∫Á©∫")
     private String importToken;
 
     private Boolean saveToBank = true;
@@ -15,3 +15,4 @@ public class ImportConfirmDTO {
 
     private Long targetPaperId;
 }
+

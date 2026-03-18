@@ -1,4 +1,4 @@
-package com.xnova.dto.user;
+ï»¿package com.xnova.dto.user;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -6,26 +6,27 @@ import lombok.Data;
 @Data
 public class CreateTeacherDTO {
 
-    @NotBlank(message = "ÓÃ»§Ãû²»ÄÜÎª¿Õ")
+    @NotBlank(message = "ç”¨æˆ·åä¸èƒ½ä¸ºç©º")
     private String username;
 
-    @NotBlank(message = "ĞÕÃû²»ÄÜÎª¿Õ")
+    @NotBlank(message = "å§“åä¸èƒ½ä¸ºç©º")
     private String realName;
 
-    @NotBlank(message = "ÊÖ»úºÅ²»ÄÜÎª¿Õ")
+    @NotBlank(message = "æ‰‹æœºå·ä¸èƒ½ä¸ºç©º")
     private String phone;
 
     private String password;
 
-    @NotBlank(message = "¹¤ºÅ²»ÄÜÎª¿Õ")
+    @NotBlank(message = "å·¥å·ä¸èƒ½ä¸ºç©º")
     private String teacherNo;
 
     private String title;
 
-    @NotBlank(message = "ÔºÏµ²»ÄÜÎª¿Õ")
+    @NotBlank(message = "é™¢ç³»ä¸èƒ½ä¸ºç©º")
     private String department;
 
     private String major;
 
     private String contactOffice;
 }
+

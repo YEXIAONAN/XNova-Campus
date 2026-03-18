@@ -1,4 +1,4 @@
-package com.xnova.controller.auth;
+﻿package com.xnova.controller.auth;
 
 import com.xnova.common.result.ApiResponse;
 import com.xnova.dto.auth.LoginDTO;
@@ -37,3 +37,4 @@ public class AuthController {
         return ApiResponse.ok();
     }
 }
+

@@ -1,4 +1,4 @@
-package com.xnova.parser.model;
+﻿package com.xnova.parser.model;
 
 import lombok.Data;
 
@@ -11,3 +11,4 @@ public class ParseResult {
     private List<ParsedQuestion> questions = new ArrayList<>();
     private List<ParseError> errors = new ArrayList<>();
 }
+

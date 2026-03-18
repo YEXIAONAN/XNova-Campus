@@ -1,4 +1,4 @@
-package com.xnova.vo.teacher;
+﻿package com.xnova.vo.teacher;
 
 import lombok.Data;
 
@@ -16,3 +16,4 @@ public class QuestionVO {
     private String analysis;
     private BigDecimal defaultScore;
 }
+

@@ -1,4 +1,4 @@
-package com.xnova.common.model;
+﻿package com.xnova.common.model;
 
 import lombok.Data;
 
@@ -11,3 +11,4 @@ public class PageResult<T> {
     private long total;
     private List<T> records;
 }
+

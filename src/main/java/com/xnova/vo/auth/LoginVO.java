@@ -1,4 +1,4 @@
-package com.xnova.vo.auth;
+﻿package com.xnova.vo.auth;
 
 import lombok.Data;
 
@@ -20,3 +20,4 @@ public class LoginVO {
         private String realName;
     }
 }
+

@@ -1,4 +1,4 @@
-package com.xnova.dto.teacher;
+锘縫ackage com.xnova.dto.teacher;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -10,12 +10,12 @@ import java.util.List;
 @Data
 public class AddPaperQuestionsDTO {
 
-    @NotEmpty(message = "题目列表不能为空")
+    @NotEmpty(message = "棰樼洰鍒楄〃涓嶈兘涓虹┖")
     private List<Item> items;
 
     @Data
     public static class Item {
-        @NotNull(message = "题目ID不能为空")
+        @NotNull(message = "棰樼洰ID涓嶈兘涓虹┖")
         private Long questionId;
 
         private Integer questionOrder;
@@ -25,3 +25,4 @@ public class AddPaperQuestionsDTO {
         private Integer required;
     }
 }
+

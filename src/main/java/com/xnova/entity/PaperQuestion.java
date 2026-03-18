@@ -1,4 +1,4 @@
-package com.xnova.entity;
+﻿package com.xnova.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -24,3 +24,4 @@ public class PaperQuestion {
 
     private Integer required;
 }
+

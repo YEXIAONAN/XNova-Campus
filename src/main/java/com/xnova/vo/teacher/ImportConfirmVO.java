@@ -1,4 +1,4 @@
-package com.xnova.vo.teacher;
+﻿package com.xnova.vo.teacher;
 
 import lombok.Data;
 
@@ -11,3 +11,4 @@ public class ImportConfirmVO {
     private Integer duplicateCount;
     private List<Long> importedQuestionIds;
 }
+
