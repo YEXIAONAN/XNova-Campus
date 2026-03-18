@@ -1,0 +1,43 @@
+﻿#PAPER: Java期中测验A
+
+#QUESTION
+TYPE: SINGLE
+STEM: Java中用于继承的关键字是？
+OPTIONS:
+A. implement
+B. extends
+C. interface
+D. super
+ANSWER: B
+ANALYSIS: extends用于类继承
+SCORE: 5
+#END
+
+#QUESTION
+TYPE: MULTI
+STEM: 以下哪些属于JVM内存区域？
+OPTIONS:
+A. 堆
+B. 方法区
+C. 程序计数器
+D. 网卡缓存
+ANSWER: A,B,C
+ANALYSIS: D不属于JVM规范内存区域
+SCORE: 8
+#END
+
+#QUESTION
+TYPE: JUDGE
+STEM: 栈是先进先出结构。
+ANSWER: F
+ANALYSIS: 栈是后进先出
+SCORE: 2
+#END
+
+#QUESTION
+TYPE: SHORT
+STEM: 请简述二叉搜索树的定义。
+ANSWER: 左子树所有节点小于根，右子树所有节点大于根，且左右子树也满足该性质。
+SCORE: 10
+#END
+
